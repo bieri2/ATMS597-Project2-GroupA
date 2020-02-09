@@ -30,7 +30,7 @@ There 3 aspects to this problem:
    
    ## Needs coding
    
-## (1) Plotting the Climate Stripes/Time-Series:
+## (3) Plotting the Climate Stripes/Time-Series:
 
    - I do this in the 'Plot_Stripes.py' program. 
    
