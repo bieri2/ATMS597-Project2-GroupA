@@ -7,11 +7,7 @@ This is done with the <b> stripes_inputs </b> function.
 
 The <b> stripes_inputs </b> function and associated helper function are adapted from Stefanie Moline: https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas/
 
-Example call:
-
-<b> stripes_inputs </b>(stationid, token, start, end) 
-
-Specify the GHCND Site ID ('stationid'), user-specific token ('token), and desired start and end years ('start' and 'end').
+Example: Specify the GHCND Station ID ('stationid'), user-specific token ('token), and desired start and end years ('start' and 'end').
    
    e.g., 
    
@@ -21,10 +17,11 @@ Specify the GHCND Site ID ('stationid'), user-specific token ('token), and desir
    
    token     = 'xxxxexampletokenxxxx'
    
-   data = stripes_inputs(siteid = 'CITY:US360019', token = token, start=starttime, end=endtime)
+   data = stripes_inputs(stationid = 'CITY:US360019', token = token, start=starttime, end=endtime)
    
-## (2) Processing the data/ Averaging it to the necessary time-interval:
-   - I do this in the program for the example plot case in 'Plot_Stripes.py'. However, the downloaded data might not be averaged at the same time-interval as necessary for the stripes/time-series plot. An additional program must attend to that.
+## (2) Processing the data/filling missing values:
+
+This is done with the <b> make_dataframe </b> function. 
    
 
 ## (3) Plotting the Climate Stripes/Time-Series:
