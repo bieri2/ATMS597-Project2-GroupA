@@ -1,13 +1,10 @@
 # ATMS597-Project2-GroupA
 Repository for Group A's submission for Project 2.
 
-There 3 aspects to this problem:
-
 ## (1) Downloading the data:
-   - I took a stab at that in the 'download_data.py' program. 
-   ## Needs checking
-   
-   Just replace the token in the code with your own token. Specify the GHCND Site ID ('siteid'), start and end time-stamps ('start' and 'end') of for your required dataset and the temporal interval at which you want to procure the data ('tunit'). Currently the possible intervals are yearly, monthly , weekly or daily. \n
+
+This is done with <b> stripes_input </b> function. 
+Specify the GHCND Site ID ('stationid'), start and end years ('start' and 'end') of for your required dataset and the temporal interval at which you want to procure the data ('tunit'). Currently the possible intervals are yearly, monthly , weekly or daily. \n
    
    e.g., 
    
