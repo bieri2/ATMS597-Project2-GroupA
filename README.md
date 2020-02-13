@@ -3,9 +3,9 @@ Repository for Group A's submission for Project 2.
 
 ## (1) Downloading the data:
 
-This is done with the <b> stripes_inputs </b> functions.
+This is done with the <b> stripes_inputs </b> function.
 
-The <b> stripes_inputs </b> and associated helper functions are adapted from Stefanie Moline: https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas/
+The <b> stripes_inputs </b> function and associated helper function are adapted from Stefanie Moline: https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas/
 
 Example call:
 
