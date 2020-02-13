@@ -37,9 +37,7 @@ df = <b>make_dataframe</b>(data)
 ## (3) Plotting the Climate Stripes/Time-Series:
 
 This is done with the <b>plot_stripes</b> program. 
-   
-   ## Self-sufficient enough. But the rest of the code has to be written in such a way that Plot_Stripes.py can have its necessary set of inputs, namely :
-   
+  
    (a) Tmax, Tmin (both of which are 1D Numpy Arrays/Lists), 
    
    (b) t (A 1D Numpy Array/List that has the time-stamp (year number or year-month combo) of each data. Here each time-stamp might be repeated multiple times, as there might be monthly or weekly data for annual records, whereas, there might be weekly or daily data for monthly records and so on).
@@ -48,6 +46,4 @@ This is done with the <b>plot_stripes</b> program.
    
    (d) plot_tseries - A character user prompt that only plots the time-series on the stripes if the user inputs 'y'.
    
-# Please edit the rest of the code and put these functions into one Python file.
-
 
