@@ -3,7 +3,8 @@ Repository for Group A's submission for Project 2.
 
 ## (1) Downloading the data:
 
-This is done with the <b> stripes_inputs </b> functions. \n
+This is done with the <b> stripes_inputs </b> functions.
+
 The <b> stripes_inputs </b> and associated helper functions are adapted from Stefanie Moline: https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas/
 
 Example call:
@@ -14,25 +15,18 @@ Specify the GHCND Site ID ('stationid'), user-specific token ('token), and desir
    
    e.g., 
    
-   starttime = datetime.date(2018, 1, 1)
+   startyear = 1910
    
-   endtime = datetime.date(2018, 1, 10)
+   endyear   = 2019
    
-   data = stripes_inputs(siteid = 'CITY:US360019', start=starttime, end=endtime, tunit='d')
+   token     = 'xxxxexampletokenxxxx'
    
-   The download data can be read a Pandas data-frame,
-   
-   e.g.,
-   
-   import pandas as pd
-   
-   df = pd.DataFrame(data)
+   data = stripes_inputs(siteid = 'CITY:US360019', token = token, start=starttime, end=endtime)
    
 ## (2) Processing the data/ Averaging it to the necessary time-interval:
    - I do this in the program for the example plot case in 'Plot_Stripes.py'. However, the downloaded data might not be averaged at the same time-interval as necessary for the stripes/time-series plot. An additional program must attend to that.
    
-   ## Needs coding
-   
+
 ## (3) Plotting the Climate Stripes/Time-Series:
 
    - I do this in the 'Plot_Stripes.py' program. 
