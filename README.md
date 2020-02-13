@@ -17,16 +17,26 @@ Example: Specify the GHCND Station ID ('stationid'), user-specific token ('token
    
    token     = 'xxxxexampletokenxxxx'
    
-   data = stripes_inputs(stationid = 'CITY:US360019', token = token, start=starttime, end=endtime)
+   data = <b>stripes_inputs</b>(stationid = 'CITY:US360019', token = token, start=starttime, end=endtime)
    
 ## (2) Processing the data/filling missing values:
 
-This is done with the <b> make_dataframe </b> function. 
+This is done with the <b> make_dataframe </b> function. This function does a few things:
+
+- Create a DataFrame using the input data, which should be a list of dictionaries returned from <b> stripes_inputs </b>.
+
+- Use the 'date' column of the dataframe (which comes from the list of dictionaries) to define a DateTime index for the DataFrame.
+
+- Resample the data using pandas.DataFrame.resample() to fill missing values with NaNs. 
+
+Example call: 
+
+df = <b>make_dataframe</b>(data)
    
 
 ## (3) Plotting the Climate Stripes/Time-Series:
 
-   - I do this in the 'Plot_Stripes.py' program. 
+This is done with the <b>plot_stripes</b> program. 
    
    ## Self-sufficient enough. But the rest of the code has to be written in such a way that Plot_Stripes.py can have its necessary set of inputs, namely :
    
