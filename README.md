@@ -3,7 +3,8 @@ Repository for Group A's submission for Project 2.
 
 ## (1) Downloading the data:
 
-This is done with <b> stripes_input </b> function. 
+This is done with the <b> make_request </b> and <b> stripes_input </b> functions. The <b> make request </b> function is adapted from Stefanie Moline: https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas/
+
 Specify the GHCND Site ID ('stationid'), start and end years ('start' and 'end') of for your required dataset and the temporal interval at which you want to procure the data ('tunit'). Currently the possible intervals are yearly, monthly , weekly or daily. \n
    
    e.g., 
