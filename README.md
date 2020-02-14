@@ -1,6 +1,8 @@
 # ATMS597-Project2-GroupA
 Repository for Group A's submission for Project 2.
 
+Group members: Carolina Bieri, Arka Mitra, Jesse Loveridge
+
 ## (1) Downloading the data:
 
 This is done with the <b>stripes_inputs</b> function.
@@ -36,12 +38,7 @@ df = <b>make_dataframe</b>(data)
 
 ## (3) Plotting the Climate Stripes/Time-Series:
 
-This is done with the <b>plot_stripes</b> program. This program plots Climate Stripes following the procedure created by Ed Hawkins at the University of Reading: https://showyourstripes.info/
+This is done with the <b>plot_stripes</b> function. This program plots Climate Stripes following the procedure created by Ed Hawkins at the University of Reading: https://showyourstripes.info/
 
-
-   
-   (c) Station_name - Self-explanatory. Used to title the plot only.
-   
-   (d) plot_tseries - A character user prompt that only plots the time-series on the stripes if the user inputs 'y'.
-   
+This function can be used to plot data at yearly, monthly, or weekly frequency. The frequency can be specified using the flag 'tunit'. Additionally, the user can opt to plot a time series with axis labels over the Climate Stripes by using the 'plot_tseries' flag. 
 
