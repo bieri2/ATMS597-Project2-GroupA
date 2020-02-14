@@ -36,11 +36,9 @@ df = <b>make_dataframe</b>(data)
 
 ## (3) Plotting the Climate Stripes/Time-Series:
 
-This is done with the <b>plot_stripes</b> program. 
-  
-   (a) Tmax, Tmin (both of which are 1D Numpy Arrays/Lists), 
-   
-   (b) t (A 1D Numpy Array/List that has the time-stamp (year number or year-month combo) of each data. Here each time-stamp might be repeated multiple times, as there might be monthly or weekly data for annual records, whereas, there might be weekly or daily data for monthly records and so on).
+This is done with the <b>plot_stripes</b> program. This program plots Climate Stripes following the procedure created by Ed Hawkins at the University of Reading: https://showyourstripes.info/
+
+
    
    (c) Station_name - Self-explanatory. Used to title the plot only.
    
